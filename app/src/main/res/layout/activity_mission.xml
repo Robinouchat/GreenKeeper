@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MissionActivity">
+    <EditText
+        android:id="@+id/dateValiditeMission"
+        android:layout_width="135dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textTitreValidite"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionMission" />
+
+    <ImageView
+        android:id="@+id/imgMission"
+        android:layout_width="414dp"
+        android:layout_height="291dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgKeeperAvatar"
+        app:srcCompat="@drawable/test" />
+
+    <TextView
+        android:id="@+id/titleMission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Titre de la mission"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/imgMission"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imgKeeperAvatar"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtKeeperName"
+        android:layout_width="296dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:text="John Doe (Orléans)"
+        app:layout_constraintStart_toEndOf="@+id/imgKeeperAvatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtKeeperInfos"
+        android:layout_width="295dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="Recommandé par : 3 Greener"
+        app:layout_constraintStart_toEndOf="@+id/imgKeeperAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/txtKeeperName" />
+
+    <EditText
+        android:id="@+id/txtDescriptionMission"
+        android:layout_width="416dp"
+        android:layout_height="198dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textLongMessage|textMultiLine"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMission"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel metus eu purus mattis vestibulum. Curabitur vel luctus lacus. Quisque lobortis tincidunt egestas. Nullam egestas arcu sem, at sodales nulla vestibulum vel. Cras laoreet fermentum massa eu hendrerit. In placerat lorem a iaculis ornare. Mauris libero tellus, laoreet id ornare ac, viverra ut orci. Sed suscipit ex a dapibus pretium. Duis nec magna sit amet sapien consequat rhoncus eu sodales dui. Ut tincidunt elit lectus, non rutrum urna vestibulum id. Fusce porta augue mauris, sit amet efficitur magna tempor sit amet. Etiam iaculis iaculis nisl eget tincidunt.  Ut tincidunt elit lectus, non rutrum urna vestibulum id. Fusce porta augue mauris, sit amet efficitur magna tempor sit amet. Etiam iaculis iaculis nisl eget tincidunt. " />
+
+    <TextView
+        android:id="@+id/txtNomLieu"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:text="Parc Pasteur - Orléans"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionMission" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionMission"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="74dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="270dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/partage2" />
+
+    <EditText
+        android:id="@+id/datePublicationMission"
+        android:layout_width="135dp"
+        android:layout_height="29dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionMission" />
+
+    <TextView
+        android:id="@+id/txtTitrePubliee"
+        android:layout_width="64dp"
+        android:layout_height="29dp"
+        android:text="Publiée :"
+        app:layout_constraintStart_toEndOf="@+id/txtNomLieu"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionMission" />
+
+    <TextView
+        android:id="@+id/textTitreValidite"
+        android:layout_width="63dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="2dp"
+        android:text="Validité :"
+        app:layout_constraintStart_toEndOf="@+id/txtNomLieu"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitrePubliee" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="784dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/dialog" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/generalGreenBackground"
+        android:text="Faire la mission pour 10€"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomLieu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
